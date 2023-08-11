@@ -295,8 +295,8 @@ text-align: center;
   justify-content: center;
 }
 .portfolio .portfolio-img .only-img {
-  width: 469px;
-  position: relative;
+flex: 1; 
+ position: relative;
 }
 .portfolio .portfolio-img .only-img img {
   width: 100%;
