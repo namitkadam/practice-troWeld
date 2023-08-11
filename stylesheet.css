@@ -227,13 +227,15 @@ header .side-button i:hover {
 /* welcomex */
 .welcomex {
   display: flex;
-  margin: 105px 150px 0px 150px;
-  gap: 180px;
+  margin: 105px 100px 0px 100px;
+  gap: 100px;
+  flex-direction: row;
 }
 .welcomex .text-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
 }
 .welcomex .text-side h5 {
   font-size: 2em;
@@ -254,6 +256,10 @@ header .side-button i:hover {
   background-color: transparent;
   color: #da7426;
   cursor: pointer;
+}
+.welcomex .img-side{
+flex: 1;
+text-align: center;
 }
 /* portfolio */
 .portfolio {
@@ -286,6 +292,7 @@ header .side-button i:hover {
   flex-wrap: wrap;
   gap: 1em;
   margin-top: 1.2em;
+  justify-content: center;
 }
 .portfolio .portfolio-img .only-img {
   width: 469px;
@@ -370,10 +377,10 @@ header .side-button i:hover {
   color: #da7426;
 }
 .services .services-cards {
-  margin: 105px 150px 20px 150px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.85em;
+  gap: 1.5em;
+  justify-content: center;
 }
 .services .services-cards .service-card {
   max-width: 360px;
@@ -429,7 +436,6 @@ header .side-button i:hover {
 }
 .touch .form-map {
   display: flex;
-  height: 520px;
 }
 .touch .form-map .side-form {
   background-color: #003471;
@@ -507,7 +513,7 @@ header .side-button i:hover {
   font-size: 1.1em;
 }
 .testimonial .test-container p {
-  width: 565px;
+  width: 565px ;
   height: 150px;
   border: 1px solid #000;
   padding: 1em;
@@ -546,16 +552,16 @@ footer .footer-cl-4 .footer-heading {
 footer .footer-cl-4 ul li {
   margin: 5px 0;
 }
-footer .footer-cl-4 ul li a {
-  color: #fff;
-}
-footer .welding p {
+footer .footer-cl-4 ul li a, footer .welding p, footer .center p  {
   color: #878585;
 }
 footer .media ul {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+footer .media ul li a{
+  color: #fff;
 }
 footer .media ul li a i {
   width: 28px;
@@ -565,9 +571,6 @@ footer .media ul li a i {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer .center p {
-  color: #878585;
 }
 .footer-icon-cl-4 {
   display: flex;
@@ -608,15 +611,14 @@ footer .footer-icon-cl-4 .input .email {
   display: block;
   height: 45px;
   padding: 10px;
-  border-radius: 0;
   border: none;
 }
 .footer-icon-cl-4 .arrow {
-    left: 200px;
+    left: 195px;
     top: 0px;
   position: absolute;
   background-color: #da7426;
-  padding: .92em;
+  padding: .9em;
 }
 .cupay-right{
     text-align: center;
